@@ -49,7 +49,7 @@ $(document).ready(function (){
 updatePage();
 
 //get data for price etc. 
-var queryURL2 = "https://coinlib.io/api/v1/coinlist?key=" + "8894a69726e56135" + "&pref=BTC&page=1&order=volume_desc";
+var queryURL2 = "https://coinlib.io/api/v1/coinlist?key=" + "8894a69726e56135" + "&pref=BTC&page=1&order=rank_asc";
 
 $.ajax({
     url: queryURL2,
