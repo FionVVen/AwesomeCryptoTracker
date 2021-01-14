@@ -1,0 +1,32 @@
+/*Home Page CSS*/
+.nav-header {
+    color: white;
+}
+
+
+/*Portfolio Page CSS*/
+#portfolio-btn {
+    font-size: 20px;
+    padding: 20px 0;
+    width: 30%;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    border-color: black;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-top: 10%;
+    align-items: center;
+}
+
+#search-btn {
+    height: 30;
+}
+
+}
+
+.table1 {
+    font-style: bold;
+    font-size: 40px;
+    margin-top: 20px;
+}
