@@ -55,14 +55,14 @@
             <option selected id="coins">Search Coins </option>
             <option value="1" class="1">Bitcoin</option>
             <option value="2" class="2">Ethereum</option>
-            <option value="3" class="3">Litecoin</option>
-            <option value="4" class="4">Bitcoin Cash</option>
+            <option value="3" class="3">Tether</option>
+            <option value="4" class="4">Polkadot</option>
             <option value="5" class="5">XRP</option>
-            <option value="6" class="6">Stellar</option>
-            <option value="7" class="7">Cardano</option>
-            <option value="8" class="8">Bitcoin SV</option>
-            <option value="9" class="9">ZCash</option>
-            <option value="10" class="10">Chainlink</option>                      
+            <option value="6" class="6">Cardano</option>
+            <option value="7" class="7">Litecoin</option>
+            <option value="8" class="8">Bitcoin Cash</option>
+            <option value="9" class="9">ChainLink</option>
+            <option value="10" class="10">Binance Coin</option>                      
           </select>
           <div class="input-group-append">
             <button type="button" class="btn btn-outline-secondary" id="search-btn">Search</button>
@@ -77,11 +77,15 @@
               <th scope="col" id="count">#</th>
               <th scope="col" id="coins">Coins</th>
               <th scope="col" id="price">Price</th>
-              <th scope="col" id="units">Units</th>
+              <th scope="col" id="volume">Volume</th>
               <th scope="col" id="market-value">Market Value</th>
               <th scope="col" id="24hpercent">24h %</th>
+              <th>
+              <button type="button" class="btn btn-primary">Primary</button>
+            </th>
             </tr>
-          </thead>                
+          </thead> 
+          <ul class="list-group history"></ul>               
 
         </table>
         
@@ -105,8 +109,8 @@
       </div>
     </div>
   </div>
-
-<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="script2.js"></script>
 
 </body>
 
