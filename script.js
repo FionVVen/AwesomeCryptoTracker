@@ -1,90 +1,63 @@
-$(document).ready(function (){ 
 
-    var queryURL = "https://min-api.cryptocompare.com/data/v2/news/?lang=EN&api_key=" + "29de9466349c2dc423012d112499f0d56886e082d2617b7f779b44abe3b379c1"
+var countEl = document.getElementById("count");
+var coinsEl = document.getElementById("coins");
+var priceEl = document.getElementById("price");
+var unitsEl = document.getElementById("units");
+var percentEl = document.getElementById("24hpercent");
+var searchEl = document.getElementById("search-btn");
 
-    var numArticles 
 
-    $.ajax({
-        url: queryURL,
-        method: "GET"
-     }).then(function(response){
-        console.log(response);
-        //log length of articles 
-        var articleLength = response.Data.length; 
-        console.log(articleLength);
-        //variable to hold news article ([0] to be replaced by [i])
-        //for (var i = 0; i < response.Data.length; i++) {};
-        var articleData = response.Data[1];
-        console.log(articleData);
-        //hold data to be displayed
-        var articleTitle = response.Data[1].title;
-        console.log(articleTitle);
-        var articleBody = response.Data[1].body;
-        console.log(articleBody);
-        var articleCategories = response.Data[1].categories;
-        console.log(articleCategories)
-        var articleURL = response.Data[1].url;
-        console.log(articleURL);
-        //var articlePublished = response.Data[1].published_on;
-        //console.log(articlePublished);
-        var articleSource = response.Data[1].source;
-        console.log(articleSource);
-        //potential to add upvotes and downvotes
-     });
+searchEl.addEventListener("click", addWatchlistRow);
 
-    var articleCount = 0; 
+function addWatchlistRow() {
 
-    function updatePage() {
-        for (var i = 0; i < numArticles; i++) {
-            //increase article count 
-            var articleCount = i++;
-            // Create the  list group to contain the articles and add the article content for each
-            var $articleList = $("<ul>");
-            $articleList.addClass("list-group");
-            // Add the newly created element to the DOM
-            $("#article-section").append($articleList);
-        }
+//var option = document.getElementsByTagName("option")[0].getAttribute("value");//value selected in dropdown
+var e = document.getElementById("inputGroupSelect02");
+var option = e.value;
+console.log(option);
+
+var table = document.getElementsByTagName('table')[0];
+console.log(table);
+
+var newRow = table.insertRow(table.rows.length++);
+
+let count = 0;
+++count;
+console.log(count);
+
+var watchCount = newRow.insertCell(0);
+var watchCoin = newRow.insertCell(1);
+var watchPrice = newRow.insertCell(2);
+var watchUnits = newRow.insertCell(3);
+var watchValue = newRow.insertCell(4);
+var watchPerc = newRow.insertCell(5);
+
+    if (option === '1') {
+        watchCount.innerHTML = '1';
+        watchCoin.innerHTML = 'Bitcoin';
+        watchPrice.innerHTML = '$34,377.21';
+        watchUnits.innerHTML = '$19.57 B';
+        watchValue.innerHTML = '$ 639.62 B';
+        watchPerc.innerHTML = '-4.19%';
     }
+    else if (option === '2') {
+        watchCount.innerHTML =  '2';
+        watchCoin.innerHTML = 'Ethereum';
+        watchPrice.innerHTML = '$1,055.61';
+        watchUnits.innerHTML = '$10.06 B';
+        watchValue.innerHTML = '$ 9.40 B';
+        watchPerc.innerHTML = '-4.70%';
+    }
+    else if (option === '3') {
+        watchCount.innerHTML =  '3';
+        watchCoin.innerHTML = 'Litecoin';
+        watchPrice.innerHTML = '$1,055.61';
+        watchUnits.innerHTML = '$10.06 B';
+        watchValue.innerHTML = '$ 9.40 B';
+        watchPerc.innerHTML = '-4.70%';
+    }
+}
 
-updatePage();
+//API function to get data
 
-//get data for price etc. 
-var queryURL2 = "https://coinlib.io/api/v1/coinlist?key=" + "8894a69726e56135" + "&pref=BTC&page=1&order=rank_asc";
-
-$.ajax({
-    url: queryURL2,
-    method: "GET"
- }).then(function(response){
-     console.log(response);
-
-     var apiCoins = response.coins;
-     console.log(apiCoins);
-
-     var coinName = response.coins[0].name;
-     console.log(coinName);
-
-     var coinPrice = response.coins[0].price;
-     console.log(coinPrice);
-
-     var coinRank = response.coins[0].rank;
-     console.log(coinRank);
-
-     var coinVolume = response.coins[0].volume_24h;
-     console.log(coinVolume);
-
-     var coinDelta = response.coins[0].delta_24h;
-     console.log(coinDelta);
- });
-         
- var queryURL3 = "https://coinlib.io/api/v1/coin?key=" + "8894a69726e56135" + "&pref=EUR&symbol=BTC"
-
- $.ajax({
-    url: queryURL3,
-    method: "GET"
- }).then(function(response){
-     console.log(response);
- });
-
-
-
-});
+//save to localStorage
