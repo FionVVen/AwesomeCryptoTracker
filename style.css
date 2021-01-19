@@ -1,10 +1,31 @@
-/*Home Page CSS*/
-.nav-header {
+/*Home Page + footer CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
+.bg {
+    background-color: rgb(0, 10, 10);
+    background-image: url("https://newscoop.com/wp-content/uploads/2018/11/629795-cryptocurrency-thinkstock-120417.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: soft-light;
+    position: relative;
+    background-size: auto;
     color: white;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 5%;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
+.navbar{
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+}
 
-/*Portfolio Page CSS*/
+#wrap {
+    text-align: center;
+}
+
 #portfolio-btn {
     font-size: 20px;
     padding: 20px 0;
@@ -14,19 +35,159 @@
     background-color: blue;
     border-color: black;
     border-radius: 10px;
-    margin-left: 30%;
-    margin-top: 10%;
     align-items: center;
+    position: relative;
 }
 
-#search-btn {
-    height: 30;
+.w3-container {
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
+#footer {
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+/*Portfolio Page CSS*/
+
+.bg-portfolio {
+    background-image: url("https://www.newsbtc.com/wp-content/uploads/2019/02/shutterstock_1245388864-e1550961476485.jpg");
+    background-blend-mode: saturation;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.w3-select {
+    margin-top: 15px;
+    width: 90%;
+}
+
+#listbtn {
+    height: 40px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+#listbtn:hover {
+    background-color: rgb(43, 43, 221);
+}
+
+button {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: rgb(43, 43, 221);
+}
+
+.w3-modal-content {
+    padding-bottom: 20px;
+    border-radius: 5px;
+    width: 25%;
+}
+
+.close {
+    color: black;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: solid;
+    border-color: black;
+    border: 3px;
+}
+
+.close:hover {
+    background-color: rgb(43, 43, 221);
+}
+
+#text {
+    color: black;
 }
 
 .table1 {
     font-style: bold;
     font-size: 40px;
     margin-top: 20px;
+}
+
+/* News Page */
+.bg-news {
+    background-color: rgb(0, 10, 10);
+    background-image: url("https://newscoop.com/wp-content/uploads/2018/11/629795-cryptocurrency-thinkstock-120417.jpg");
+    background-blend-mode: soft-light;
+    color: white;
+    margin-top: 10px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 10%;
+}
+.searchBtn {
+    width: 30%;
+    border-radius: 10px;
+    background-color: red;
+    font-size: 20px;
+}
+
+.searchBtn:hover {
+    background-color:  rgb(43, 43, 221);
+}
+
+.panel {
+    margin-bottom: 10%;
+    align-items: center;
+    text-align: justify;
+    
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    position: relative;
+    float: left;
+    padding-right: 20px;
+}
+
+.link {
+    text-decoration: underline;
+    color: blue;
+    margin-bottom: 10%;
+}
+
+/* XS */
+@media (max-width: 767px) {
+  
+}
+
+/* XS, SM */
+@media (max-width: 991px) {
+  
+}
+
+/* SM */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/* MD */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/* MD, LG */
+@media (min-width: 992px) {
+  
+}
+
+/* LG */
+@media (min-width: 1200px) {
+  
 }

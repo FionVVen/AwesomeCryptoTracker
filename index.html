@@ -5,87 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
+    <link rel="stylesheet" href="style.css">
+    
     <title>Home Page</title>
 </head>
 
-<body>
-    <div class="bg">
-        <div id = "wrap">
-            <!-- Start of Navigation Bar -->
+<body>      
 
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
-           
-            <div class="card bg-light mb-3" style="max-width: 100%;">
-                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                    <h2 class="nav-header">Awesome Crypto Tracker</h2>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
+            <!-- Navigation Bar -->
+        <div class="navbar">
+            <div class="w3-bar w3-teal" id="navbar">
+                <span class="w3-bar-item"><i class="fab fa-bitcoin">Awesome Crypto Currency Tracker</i></span>
 
-                        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="index.html">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="portfolio.html">My Portfolio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="news.html">Latest news</a>
-                                </li>
-                            </ul>
-                        </div>
-                </nav>
-             </div>
+                <a href="News.html" class="w3-bar-item w3-button w3-teal w3-right w3-hover-blue">Latest News</a> 
+                <a href="portfolio.html" class="w3-bar-item w3-button w3-teal w3-right w3-hover-blue">My Portfolio</a> 
+                <a href="index.html" class="w3-bar-item w3-button w3-teal w3-right w3-hover-blue">Home</a> 
+              </div>
+        </div>
 
-             <!-- Start of the content -->     
-            <div class="container">
+<div class="bg">
+             <!-- Start of the content -->  
+        <div id = "wrap">   
+
+            <div class="w3-container">
                 <div class="row align-items-start">
-                    <div class="col-md-12">
-                        <div class="card-header">
-                            <h2>About Us</h2>
-                        </div>
-                    </div>
 
                     
+                                   
                     <div class="row">
                         <div class="col-md-12">
-                            <p>What is Cryptocurrency? Here’s What You Should Know.. </p>
+                            <h1>Welcome to the Awesome Crypto Currency Portfolio Tracker</h1>
+                            <br>
+                            <p>Crypto currency has seen significant growth over the past 5 years but yet many investors are still in the dark about what it is and how it works.
+                            
+                            The best way to familiarize yourself with crypto currency is to experience it. Use the MyPortfolio Tool to build and track the performance of your Crypto Currency Portfolio.</p>
+                            
+                            We have also provided access to the latest news so you can keep up to date on what is happening with the crypto currency market.</p>   
                         </div>
                     </div>
-                                    
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>A cryptocurrency (or “crypto”) is a digital currency that can be used to buy goods and services, but uses an online ledger with strong cryptography to secure online transactions. Much of the interest in these unregulated currencies is to trade for profit, with speculators at times driving prices skyward. </p>
-                        </div>
-                    </div>
+                    <br>
 
                     <div class="row">
                         <div class="col-md-12">
+                            <h2>What is Crypto Currency?</h2>
+                            <br>
                             <p>A cryptocurrency is a digital or virtual currency that is secured by cryptography, which makes it nearly impossible to counterfeit or double-spend. Many cryptocurrencies are decentralized networks based on blockchain technology—a distributed ledger enforced by a disparate network of computers </p>
+                            <br>
+                            <br>
+                            <h4>How to get started?</h4>
+                            <p>Simply click on on the "Create Portfolio" button to get started</p>
                         </div>
                     </div>
                     
                 </div>
             </div>
 
-            <div id="home" class="flex-column flex-center"></div>
-                <a href="portfolio.html" class="btn" id="portfolio-btn">Create Portfolio</a>            
-        </div>
-        </div>  
-    </div>
+            <div id="home" class="flex-column flex-center">
+                <button class="w3-button w3-red w3-hover-blue"  class="btn" id="portfolio-btn">
+                    <a href="portfolio.html"> Create Portfolio</a> 
+                </button>
+            </div>             
+              
+    </div>         
+ 
+</div>
+
+<!-- Sticky Footer Section -->
+<div class=" w3-teal" id="footer">
+    <h6>₿ -Made by Awesome Crypto Group- ₿</h6>
+        <p class="copyright"> &copy; 2021 </p>
+</div>
 
 
-
+    
 </body>
 
 </html>
