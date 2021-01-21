@@ -40,7 +40,7 @@ $(document).ready(function (){
             $("#articleWell-"+i).append("<h4>" + articleCategories + "</h4>");
             $("#articleWell-"+i).append("<img src =" + articlePhoto + ">");
             $("#articleWell-"+i).append("<p>" + articleBody + "</p>");
-            $("#articleWell-"+i).append("<a href = '"+articleURL+"' class=‘w3-bar-item w3-button w3-grey w3-right w3-hover-blue'>" + articleURL + "</a>");
+            $("#articleWell-"+i).append("<a href = '"+articleURL+"' class='link'>" + articleURL + "</a>");
             //$("#articleWell-"+i).append("<h4>" + articleCategories + "</h4>");
             //$("#articleWell-"+i).append("<img src =" + articlePhoto + ">");
     
