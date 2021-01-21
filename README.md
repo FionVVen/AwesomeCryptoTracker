@@ -7,6 +7,7 @@ The purpose of our application is to enable a prospective investor to build a mo
 - Obtain current prices, market size and latest performance
 - Assemble a mock portfolio and track your profit or loss
 - Access the latest news on crypto currencies
+<img width="1680" alt="WechatIMG355" src="https://user-images.githubusercontent.com/74234811/105352790-78d8c080-5c42-11eb-8b4a-c71b6e3ae503.png">
 
 # Motivation
 
