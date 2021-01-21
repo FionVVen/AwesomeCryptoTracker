@@ -15,6 +15,7 @@
     padding-bottom: 5%;
     margin-bottom: 10px;
     margin-top: 10px;
+    z-index: inherit;
 }
 
 .header{
@@ -182,7 +183,9 @@ img {
     text-decoration: underline;
     color: blue;
     margin-bottom: 10%;
+    cursor: pointer;
 }
+
 
 /* XS */
 @media (max-width: 767px) {
